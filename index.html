@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>StopWatch</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="header__title">StopWatch</div>
+</header>
+<section class="screen" id="screen">
+    <div class="main" id="main">
+        <div class="main__stopwatch">
+            <div class="main__num main__num_minutes" data-num="minutes">00</div>
+            <div class="main__separator">:</div>
+            <div class="main__num main__num_seconds" data-num="seconds">00</div>
+            <div class="main__separator">,</div>
+            <div class="main__num main__num_milliseconds" data-num="milliseconds">00</div>
+        </div>
+        <div class="main__control">
+            <div class="main__button main__motion-wrap" data-control="start">
+                <div class="main__motion-btn"></div>
+                <div class="main__anim"></div>
+            </div>
+            <div class="main__button main__button_lap" data-control="lap">
+                <div class="main__button-text">
+                    Lap
+                </div>
+                <div class="main__anim"></div>
+            </div>
+            <div class="main__button main__button_reset" data-control="reset">
+                <div class="main__button-text">
+                    Reset
+                </div>
+                <div class="main__anim"></div>
+            </div>
+        </div>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar__title">Laps:</div>
+        <ul class="sidebar__laps">
+        </ul>
+    </aside>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
